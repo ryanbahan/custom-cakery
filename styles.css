@@ -2,9 +2,8 @@
 
 html, body {
   color: #576574;
-  font-size: 14px;
+  font-size: 18px;
   margin: 0;
-  font-family: 'Josefin Slab', serif;
   display: flex;
   flex-direction: column;
   align-items: space-between;
@@ -30,20 +29,36 @@ a:focus {
   outline: none !important;
 }
 
+footer > * {
+  margin: 1.5%;
+}
+
 form {
   background-color: rgba(255, 255, 255, .7);
   margin-bottom: 25px;
   padding: 25px;
   width: 600px;
   margin: 40px auto;
+  border: solid 1px black;
+  border-radius: 5px;
 }
 
 input[type="text"], input[type="number"], textarea {
   width: 100%;
+  font-size: 16px;
+}
+
+form > * {
+  margin: 1% 0;
 }
 
 input:focus {
   outline: none!important;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 1%;
 }
 
 button {
@@ -63,33 +78,53 @@ h1 {
   margin: 45px 0;
 }
 
+h2 {
+  margin: 0;
+}
+
 h4 {
   font-size: 40px;
   text-align: center;
 }
 
+nav ul {
+  list-style-type: none;
+  font-weight: 700;
+  display: flex;
+}
+
+nav li {
+  margin-right: 15px;
+}
+
 .description-text {
   max-width: 500px;
+  min-width: 300px;
+  font-size: 18px;
+  align-self: flex-start;
+  padding: 0 5%;
 }
 
 .content {
   flex: 1 0 auto;
+  flex-wrap: wrap;
 }
 
 /********************************* HEADER *********************************/
 
 .header {
-  background-color: #333333;
   padding: 5px 25px;
   display: flex;
   flex-direction: column;
   margin-bottom: 65px;
+  border-bottom: solid 1px black;
 }
 
 .hamburger {
   position: absolute;
   top: 10px;
   left: 10px;
+  font-size: 45px;
 }
 
 .close {
@@ -129,13 +164,16 @@ h4 {
   max-width: 80%;
 }
 
+.logo {
+  margin-top: 25px;
+}
+
 /********************************* FOOTER *********************************/
 
 .footer {
   background-color: #ffcccc;
   padding: 20px 0;
   text-align: center;
-  height: 50px;
   flex-shrink: 0;
 }
 
@@ -143,13 +181,12 @@ h4 {
 
 .medium-image-text img {
   width: 400px;
+  padding: 2.5%;
 }
 
 /********************************* ORDER PAGE *********************************/
 
 .order {
-  background-image: url('./images/cupcakes.jpeg');
-  background-size: 15%;
 }
 
 .modal {
@@ -162,6 +199,7 @@ h4 {
   transform: translate(-50%, -50%);
   padding: 100px 50px;
   z-index: 2;
+
 }
 
 .modal-close {
@@ -215,6 +253,7 @@ h4 {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .half {
