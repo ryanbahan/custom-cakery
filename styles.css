@@ -43,9 +43,14 @@ form {
   border-radius: 5px;
 }
 
+fieldset {
+  border: none;
+}
+
 input[type="text"], input[type="number"], textarea {
   width: 100%;
   font-size: 16px;
+  margin: 10px 0;
 }
 
 form > * {
@@ -70,6 +75,10 @@ button {
   text-transform: uppercase;
   display: block;
   margin: 0 auto;
+}
+
+label {
+  font-weight: 600;
 }
 
 h1 {

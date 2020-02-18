@@ -36,51 +36,65 @@
         </nav>
       </header>
       <form>
-        <div>Name: </div>
-        <input required type="text">
-        <div>Address:</div>
-        <input required type="text">
-        <div>Email Address:</div>
-        <input required type="text">
-        <div>Phone Number:</div>
-        <input required type="number">
-        <div>Desired Cake</div>
-        <input type="radio" name="cake">Whole Cake
-        <input type="radio" name="cake">1/2 Dozen Cupcakes
-        <input type="radio" name="cake">1 Dozen Cupcakes
-        <input type="radio" name="cake" checked>Other
-        <div>Cake Shape (excludes cupcakes)</div>
-        <input type="radio" name="shape">Circle
-        <input type="radio" name="shape">Square
-        <input type="radio" name="shape">Rectangle
-        <input type="radio" name="shape" checked>Other
-        <div>Do You Want Writing?</div>
-        <input type="radio" name="words" checked>Yes
-        <input type="radio" name="words">No
-        <div>If you selected "writing," please indicate text here: </div>
-        <input type="text" placeholder="cake text">
-        <div>Flavor(s)</div>
-        <input type="checkbox" checked value="chocolate">Chocolate
-        <input type="checkbox" checked value="vanilla">Vanilla
-        <input type="checkbox" checked value="fruit">Fruit
-        <input type="checkbox" checked value="other">Other
-        <div>Filling(s)</div>
-        <input type="checkbox" checked value="vanilla">Vanilla
-        <input type="checkbox" checked value="chocolate">Chocolate
-        <input type="checkbox" checked value="fruit">Fruit
-        <input type="checkbox" checked value="other">Other
-        <div>Frosting(s)</div>
-        <input type="checkbox" checked value="fruit">Fruit
-        <input type="checkbox" checked value="chocolate">Chocolate
-        <input type="checkbox" checked value="vanilla">Vanilla
-        <input type="checkbox" checked value="other">Other
-        <div>Topping(s)</div>
-        <input type="checkbox" checked value="chocolate">Chocolate Shavings
-        <input type="checkbox" checked value="vanilla">Sprinkles
-        <input type="checkbox" checked value="fruit">Fruit
-        <input type="checkbox" checked value="other">Other
-        <div>Approx. How Many People Should Cake Feed?</div>
-        <select name="" id="">
+        <label for="name">Name: </label>
+        <input required type="text" id="name">
+        <label for="address">Address:</label>
+        <input required type="text" id="address">
+        <label for="email">Email Address:</label>
+        <input required type="text" id="email">
+        <label for="phone-number">Phone Number:</label>
+        <input required type="number" id="phone-number">
+        <label for="desired-cake">Desired Cake</label>
+        <fieldset id="desired-cake">
+          <input type="radio" id="cake">Whole Cake
+          <input type="radio" id="cake">1/2 Dozen Cupcakes
+          <input type="radio" id="cake">1 Dozen Cupcakes
+          <input type="radio" id="cake" checked>Other
+        </fieldset>
+        <label for="cake-shape">Cake Shape (excludes cupcakes)</label>
+        <fieldset name="cake-shape">
+          <input type="radio" name="shape">Circle
+          <input type="radio" name="shape">Square
+          <input type="radio" name="shape">Rectangle
+          <input type="radio" name="shape" checked>Other
+        </fieldset>
+        <label for="writing">Do You Want Writing?</label>
+        <fieldset name="writing">
+          <input type="radio" name="words" checked>Yes
+          <input type="radio" name="words">No
+        </fieldset>
+        <label for="custom-writing">If you selected "writing," please indicate text here: </label>
+        <input type="text" placeholder="cake text" name="custom-writing">
+        <label for="flavors">Flavor(s)</label>
+        <fieldset name="flavors">
+          <input type="checkbox" checked value="chocolate">Chocolate
+          <input type="checkbox" checked value="vanilla">Vanilla
+          <input type="checkbox" checked value="fruit">Fruit
+          <input type="checkbox" checked value="other">Other
+        </fieldset>
+        <label for="filling">Filling(s)</label>
+        <fieldset name="filling">
+          <input type="checkbox" checked value="vanilla">Vanilla
+          <input type="checkbox" checked value="chocolate">Chocolate
+          <input type="checkbox" checked value="fruit">Fruit
+          <input type="checkbox" checked value="other">Other
+        </fieldset>
+        <label for="frostings">Frosting(s)</label>
+        <fieldset name="frostings">
+          <input type="checkbox" checked value="fruit">Fruit
+          <input type="checkbox" checked value="chocolate">Chocolate
+          <input type="checkbox" checked value="vanilla">Vanilla
+          <input type="checkbox" checked value="other">Other
+        </fieldset>
+        <label for="toppings">Topping(s)</label>
+        <fieldset name="toppings">
+          <input type="checkbox" checked value="chocolate">Chocolate Shavings
+          <input type="checkbox" checked value="vanilla">Sprinkles
+          <input type="checkbox" checked value="fruit">Fruit
+          <input type="checkbox" checked value="other">Other
+        </fieldset>
+        <label for="people">Approx. How Many People Should Cake Feed?</label>
+        <select name="people" id="">
           <option value="1-10">1 - 10</option>
           <option value="10-20">10 - 20</option>
           <option value="10-20">20 - 30</option>
